@@ -4,13 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Form from "@/components/ContactForm"
 import {
-  MessageSquare,
-  Phone,
   MapPin,
   Mail,
-  MessageCircle,
   PhoneCallIcon,
-  XCircleIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
