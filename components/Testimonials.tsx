@@ -12,22 +12,25 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     company: "Blended Athletics",
-    quote: "Agency took our vision and turned it into a dynamic online platform. Our clients rave about the seamless experience—it's been a game-changer for our business.",
-    author: "David Rafuse",
+    quote:
+      "The agency took our vision and turned it into a dynamic online platform. Our clients rave about the seamless experience—it's been a game-changer for our business.",
+    author: "John Smith",
     title: "CEO & Owner",
     rating: 5,
   },
   {
     company: "TopCoat",
-    quote: "From concept to launch, the Caleido team was exceptional. Our site is fast, intuitive, and perfectly tailored to our brand. I can't recommend them enough!",
-    author: "Nick Mackenzie",
+    quote:
+      "From concept to launch, the  team was exceptional. Our site is fast, intuitive, and perfectly tailored to our brand. I can't recommend them enough!",
+    author: "John Smith",
     title: "CEO",
     rating: 5,
   },
   {
     company: "LevelUp Apparel",
-    quote: "Working with Caleido was the best decision for our digital transformation. They delivered a website that not only looks amazing but has streamlined our operations.",
-    author: "Mike Carew",
+    quote:
+      "Working with was the best decision for our digital transformation. They delivered a website that not only looks amazing but has streamlined our operations.",
+    author: "John Smith",
     title: "Owner",
     rating: 5,
   },
