@@ -5,6 +5,7 @@ import {
   GlobeIcon,
   InputIcon,
 } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 
@@ -16,7 +17,7 @@ const features = [
       "Build responsive and scalable websites to engage users and improve business outcomes.",
     href: "/services/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image src="" alt="Web Development Background" width={200} height={200} className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
@@ -26,7 +27,7 @@ const features = [
       "Create user-friendly mobile applications to connect with your audience anywhere.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image src="" alt="App Development Background" width={200} height={200} className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
@@ -36,7 +37,7 @@ const features = [
       "Design visually appealing and intuitive websites to enhance user experience.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image src="" alt="Website Design Background" width={200} height={200} className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
@@ -46,7 +47,7 @@ const features = [
       "Incorporate AI-powered solutions to automate processes and enhance functionality.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image src="" alt="AI Integration Background" width={200} height={200} className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
@@ -56,7 +57,7 @@ const features = [
       "Optimize your website to rank higher in search engines and attract more traffic.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Image src="" alt="SEO Background" width={200} height={200} className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];

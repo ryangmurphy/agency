@@ -57,8 +57,8 @@ export default function WebDevelopmentService() {
               </CardHeader>
               <CardContent>
                 <p>
-                  Enhance your website's speed and efficiency for better user
-                  experience and improved SEO rankings.
+                  Enhance your website&apos;s speed and efficiency for better
+                  user experience and improved SEO rankings.
                 </p>
               </CardContent>
             </Card>
@@ -107,7 +107,8 @@ export default function WebDevelopmentService() {
             Ready to Start Your Web Project?
           </h2>
           <p className="mb-8 text-xl text-muted-foreground">
-            Let&apos;s discuss how we can bring your web development ideas to life.
+            Let&apos;s discuss how we can bring your web development ideas to
+            life.
           </p>
           <Button size="lg">Get a Free Consultation</Button>
         </section>
