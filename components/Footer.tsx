@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 
 const sections = [
   {
@@ -42,7 +43,7 @@ const Footer7 = () => {
             <div className="flex w-full max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center justify-center gap-4 lg:justify-start">
-                  <img src="" alt="logo" className="h-11" />
+                  <Image src="/logo.png" alt="MunkDevs logo" width={44} height={44} className="h-11 w-auto" />
                   <p className="text-3xl font-semibold">MunkDevs</p>
                 </span>
                 <p className="mt-6 text-sm text-muted-foreground">
