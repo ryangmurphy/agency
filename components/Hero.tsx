@@ -3,12 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroBadge } from "@/components/HeroBadge";
 import SocialProof from "./SocialProof";
-import Iphone15Pro from "@/components/magicui/iphone-15-pro";
+
+
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background pt-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="relative min-h-screen bg-background pt-16 md:py-24">
+      <div className="absolute inset-0 w-full">
+
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
+      </div>
+      <div className="relative container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8 text-center">
           <div className="space-y-4">
             <HeroBadge />
@@ -24,6 +29,7 @@ export default function Hero() {
               Helping Canadian businesses scale their digital presence
             </h2>
           </div>
+
           <div className="flex flex-col gap-4 min-[400px]:flex-row">
             <Button asChild size="lg" className="h-12 px-8 rounded-2xl">
               <Link href="#contact">Book a Free Consultation</Link>
@@ -42,7 +48,6 @@ export default function Hero() {
           </div>
           <div className="relative pt-12 w-full">
             <div className="overflow-hidden rounded-lg border bg-background shadow-xl">
-              <Iphone15Pro className="mx-auto" />
               <Image
                 src="/placeholder.svg?height=600&width=1200"
                 width={1200}

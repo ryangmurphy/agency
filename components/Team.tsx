@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/jonson-allen-56a29227a/",
   },
   {
-    name: "Matthew Combdon",
+    name: "Mathew Combdon",
     role: "Software Developer",
     image: "/simon.webp",
     hoverImage: "/matt.jpg",

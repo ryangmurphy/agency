@@ -28,7 +28,7 @@ export function BentoGrid({ companies }: BentoGridProps) {
             loading="lazy"
             className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
           />
-          <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-black/70 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-black/70 to-transparent text-white opacity-100 transition-opacity duration-300">
             <h3 className="text-lg font-bold mb-1">{company.name}</h3>
             <p className="text-sm mb-2 line-clamp-2">{company.description}</p>
             <div className="flex flex-wrap gap-2">
@@ -36,7 +36,7 @@ export function BentoGrid({ companies }: BentoGridProps) {
                 <Badge
                   key={serviceIndex}
                   variant="secondary"
-                  className="bg-white/20 text-white"
+                  className="bg-background"
                 >
                   {service}
                 </Badge>
