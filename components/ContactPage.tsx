@@ -9,7 +9,8 @@ import {
   PhoneCallIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import { LinkedInLogoIcon, TwitterLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { FacebookIcon } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -55,19 +56,29 @@ export default function ContactPage() {
               </div>
               <div className="space-y-4 pb-24">
                 <h3 className="font-semibold">Social Media</h3>
-                <div className="grid grid-cols-4 -">
-                  <Link href={""}>
-                    <LinkedInLogoIcon className="h-6 w-6" />
-                  </Link>
-                  <Link href={""}>
-                    <InstagramLogoIcon className="h-6 w-6" />
-                  </Link>
-                  <Link href={""}>
-                    <TwitterLogoIcon className="h-6 w-6 " />
-                  </Link>
-                  <Link href={""}>
-                    <LinkedInLogoIcon className="h-6 w-6" />
-                  </Link>
+                <div className="grid grid-cols-4">
+                  <ul className="flex items-center space-x-6 text-muted-foreground">
+                    <li className="font-medium hover:text-primary">
+                      <a href="/">
+                        <LinkedInLogoIcon className="size-8" />
+                      </a>
+                    </li>
+                    <li className="font-medium hover:text-primary">
+                      <a href="/">
+                        <InstagramLogoIcon className="size-8" />
+                      </a>
+                    </li>
+                    <li className="font-medium hover:text-primary">
+                      <a href="/">
+                        <FacebookIcon className="size-8" />
+                      </a>
+                    </li>
+                    <li className="font-medium hover:text-primary">
+                      <a href="/">
+                        <TwitterLogoIcon className="size-8" />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ export default function Companies() {
     <section id="companies">
       <div className="pt-14">
         <div className="container mx-auto px-4 md:px-8">
-          <h3 className="text-center text-md font-semibold text-gray-600">
+          <h3 className="text-center text-lg font-semibold text-muted-foreground">
             TRUSTED BY LEADING MARITIMES BUSINESSES
           </h3>
           <div className="relative mt-6 overflow-hidden">
@@ -30,14 +30,13 @@ export default function Companies() {
                     src={company.logo}
                     width={250}
                     height={150}
-                    className="object-contain h-32 w-auto rounded-2xl dark:brightness-0 dark:invert"
+                    className="object-contain h-32 w-auto rounded-2xl"
                     alt={company.name}
                   />
                 </div>
               ))}
             </div>
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-transparent dark:from-white/5"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-transparent dark:from-white/5"></div>
+            
           </div>
         </div>
       </div>

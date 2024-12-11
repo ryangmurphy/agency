@@ -1,170 +1,204 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Code, Layout, Zap } from "lucide-react";
+import Image from "next/image";
+import { Brain, BarChartIcon as ChartBar, Cog } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
-export default function WebDevelopmentService() {
+import Link from "next/link";
+
+const services = [
+  {
+    icon: Brain,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum",
+  },
+  {
+    icon: ChartBar,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum",
+  },
+  {
+    icon: Cog,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum",
+  },
+];
+
+export default function WebDevelopment() {
   return (
-    <div className="bg-background min-h-screen">
-      <header className="bg-primary text-primary-foreground py-16">
-        <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-4">Web Development Services</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Transforming your digital vision into powerful, responsive websites
+    <section className="container mx-auto px-4">
+      <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 py-24">
+        <div className="space-y-6">
+          <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
+            Web Development that
+            <br />
+            <span className="text-emerald-600">looks good,</span>
+            <br />
+            <span className="">performs great.</span>
+          </h1>
+          <p className="text-lg max-w-xl">
+            We specialize in crafting visually stunning, highly functional, and
+            user-focused websites that bring your brand to life. Whether
+            you&apos;re looking for a sleek e-commerce platform, an engaging
+            portfolio, or a dynamic web app, our team of expert developers
+            combines cutting-edge technologies with creative design to deliver
+            custom solutions that meet your unique business needs. Let us
+            transform your vision into a digital experience that drives results.
           </p>
+          <Button className="bg-emerald-600 hover:bg-emerald-700" size="lg">
+            Start Now
+          </Button>
         </div>
-      </header>
-
-      <main className="container mx-auto py-16 px-4 space-y-16">
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Our Web Development Expertise
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Layout className="h-6 w-6 mr-2" />
-                  <span>Responsive Design</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>
-                  Create websites that look great and function flawlessly on all
-                  devices, from desktops to smartphones.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Code className="h-6 w-6 mr-2" />
-                  <span>Custom Development</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>
-                  Build tailor-made web solutions that perfectly align with your
-                  unique business needs and goals.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Zap className="h-6 w-6 mr-2" />
-                  <span>Performance Optimization</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>
-                  Enhance your website&apos;s speed and efficiency for better
-                  user experience and improved SEO rankings.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Our Web Development Process
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {process.map((step, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center"
-              >
-                <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mb-4">
-                  {index + 1}
-                </div>
-                <h3 className="font-semibold mb-2">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Why Choose Our Web Development Service?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {reasons.map((reason, index) => (
-              <div key={index} className="flex items-start">
-                <CheckCircle className="text-primary mr-4 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">{reason.title}</h3>
-                  <p className="text-muted-foreground">{reason.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="text-center bg-muted p-8 rounded-lg">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Start Your Web Project?
-          </h2>
-          <p className="mb-8 text-xl text-muted-foreground">
-            Let&apos;s discuss how we can bring your web development ideas to
-            life.
-          </p>
-          <Button size="lg">Get a Free Consultation</Button>
-        </section>
-      </main>
-
-      <footer className="bg-primary text-primary-foreground py-8 mt-16">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2024 Your Web Development Agency. All rights reserved.</p>
+        <div className="relative h-[300px] lg:h-[400px]">
+          <Image
+            src="/services/webdev.svg"
+            alt="AI Marketing Illustration"
+            fill
+            className="object-contain"
+          />
         </div>
-      </footer>
-    </div>
+      </div>
+      {/*Logo cloud 
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="mb-12 text-center text-xl text-gray-200">
+          We've helped some of the top brands in the world win in the age of AI
+        </h2>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div key={i} className="flex items-center justify-center">
+              <Image
+                src="/placeholder.svg?height=40&width=120"
+                alt={`Client logo ${i + 1}`}
+                width={120}
+                height={40}
+                className="opacity-50 grayscale transition-opacity hover:opacity-100"
+              />
+            </div>
+          ))}
+        </div>
+      </div> */}
+      <div className="container mx-auto px-4 py-24">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div className="relative h-[400px]">
+            <Image
+              src="/services/devprod.svg"
+              alt="Features illustration"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Features & Insights
+            </h2>
+            <p className="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quisquam, quos.
+            </p>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="">
+                  Responsive Web Design
+                </AccordionTrigger>
+                <AccordionContent className="">
+                  Ensure your website looks stunning and functions flawlessly on
+                  all devices, from desktops to smartphones. Our responsive
+                  design techniques create seamless user experiences across
+                  screen sizes.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="">
+                  Scalable Web Architecture
+                </AccordionTrigger>
+                <AccordionContent className="">
+                  Build web solutions designed to grow with your business. Our
+                  scalable architecture ensures your site remains fast, secure,
+                  and capable of handling increasing traffic as your business
+                  expands.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="">
+                  Accessibility Compliance
+                </AccordionTrigger>
+                <AccordionContent className="">
+                  Ensure your website is inclusive and compliant with
+                  accessibility standards like WCAG, making it user-friendly for
+                  all audiences.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="">
+                  Custom Web Applications
+                </AccordionTrigger>
+                <AccordionContent className="">
+                  Create powerful, feature-rich web applications tailored to
+                  your unique needs. Our team combines the latest technologies
+                  and best practices to deliver solutions that drive engagement
+                  and streamline operations.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="">
+                  Advanced Security Measures
+                </AccordionTrigger>
+                <AccordionContent className="">
+                  Protect your digital assets and user data with our advanced
+                  security protocols. From secure coding practices to robust
+                  encryption, we prioritize keeping your website safe from
+                  threats.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-24">
+        <h2 className="text-3xl font-bold md:text-4xl text-center pb-8">
+          How does it work?
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
+            <Card key={index} className="">
+              <CardHeader>
+                <service.icon className="h-12 w-12 text-emerald-600" />
+                <CardTitle className="text-xl">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">{service.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+      <div className="w-full max-w-3xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <h2 className="text-3xl font-extrabold sm:text-4xl">
+          <span className="block">Let&apos;s Build Your Website</span>
+        </h2>
+        <p className="mt-4 text-xl text-muted-foreground">
+          Custom website&apos;s that looks good, performs great, and drives
+          results.
+        </p>
+        <div className="mt-8">
+          <Link href="/contact" passHref>
+            <Button size="lg" className="text-lg px-8 py-3">
+              Book a Meeting
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }
-
-const process = [
-  {
-    title: "Discovery",
-    description:
-      "We start by understanding your business, goals, and target audience to create a tailored web strategy.",
-  },
-  {
-    title: "Design",
-    description:
-      "Our designers create visually appealing and user-friendly mockups that align with your brand identity.",
-  },
-  {
-    title: "Development",
-    description:
-      "Our expert developers bring the designs to life, ensuring clean code and optimal functionality.",
-  },
-  {
-    title: "Launch & Support",
-    description:
-      "We thoroughly test, launch your website, and provide ongoing support to ensure continued success.",
-  },
-];
-
-const reasons = [
-  {
-    title: "Expertise in Latest Technologies",
-    description:
-      "Our team stays up-to-date with cutting-edge web technologies to deliver modern and efficient solutions.",
-  },
-  {
-    title: "Customized Solutions",
-    description:
-      "We don't believe in one-size-fits-all. Every website we create is tailored to meet your specific needs.",
-  },
-  {
-    title: "Responsive and User-Friendly Design",
-    description:
-      "We ensure your website looks great and functions perfectly on all devices and screen sizes.",
-  },
-  {
-    title: "Ongoing Support and Maintenance",
-    description:
-      "Our relationship doesn't end at launch. We provide continuous support to keep your website running smoothly.",
-  },
-];

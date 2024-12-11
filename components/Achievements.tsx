@@ -2,9 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import NumberTicker from "@/components/magicui/number-ticker";
 
 const stats = [
-  { value: "10", symbol: "+", label: "Happy Clients" },
-  { value: "15", symbol: "+ Years", label: "Collective Experience" },
-  { value: "100", symbol: "%", label: "Satisfaction" },
+  { value: "7", symbol: "x", label: "Innovation Speed" },
+  { value: "10", symbol: "+ Years", label: "Collective Experience" },
+  { value: "5", symbol: "★", label: "Average Rating" },
 ];
 
 export default function Achievements() {

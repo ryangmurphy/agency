@@ -5,8 +5,7 @@ import Image from "next/image";
 export default function OverviewPage() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-24">
-
-      <div className="grid md:grid-cols-2 gap-8 items-start">
+      <div className="grid md:grid-cols-2 gap-24 items-start">
         <div className="space-y-4">
           <div className="text-sm font-medium text-primary">ABOUT US</div>
           <h1 className="text-3xl md:text-4xl font-bold">
@@ -17,17 +16,15 @@ export default function OverviewPage() {
           </h1>
 
           <p className="text-lg text-muted-foreground">
-            We provide <span className="text-primary">intuitive solutions</span>{" "}
-            for managing and scaling web development. We offer{" "}
-            <span className="text-primary">seamless integrations</span>, clear
-            abstractions, and{" "}
-            <span className="text-primary">powerful tools</span> to enhance
-            business productivity and value across teams of{" "}
-            <span className="text-primary">all sizes</span> and experience
-            levels.
+            The Munk Devs are proud to be a Nova Scotia based business,
+            <br /> but our ideas and impact reach far beyond. We believe in the
+            power of collaboration, innovation, and connection to bring
+            transformative solutions to life. Partnering locally and globally,
+            we work to build a digital future that&apos;s as boundless as your
+            ambitions.
           </p>
         </div>
-        <div className="relative aspect-square max-w-md mx-auto">
+        <div className="relative aspect-video max-w-lg mx-auto">
           <Image
             src="/ns.jpg"
             alt="Citaldel Hill Clock Tower"
@@ -50,10 +47,6 @@ export default function OverviewPage() {
             height={600}
             className="w-full h-full object-cover"
           />
-          <p className="text-center mt-4 text-sm text-muted-foreground">
-            Committed to fostering growth and prosperity in businesses in
-            Atlantic Canada
-          </p>
         </div>
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -113,7 +106,7 @@ export default function OverviewPage() {
       </div>
 */}
       {/* Why We Began Section */}
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="grid md:grid-cols-2 gap-36 items-center">
         <div className="space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold">Why We Began</h2>
           <div className="space-y-4">
@@ -133,7 +126,7 @@ export default function OverviewPage() {
             </p>
           </div>
         </div>
-        <div className="relative aspect-square max-w-md mx-auto">
+        <div className="relative aspect-video max-w-2xl mx-auto">
           <Image
             src="/group.webp"
             alt=""
@@ -145,14 +138,18 @@ export default function OverviewPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="grid grid-cols-2 gap-4 max-w-md">
+      <div className="grid grid-cols-3 gap-4 max-w-2xl">
         <div className="p-6 bg-muted rounded-lg">
           <div className="text-3xl font-bold">2024 Q4</div>
           <div className="text-sm text-muted-foreground">Launched</div>
         </div>
         <div className="p-6 bg-muted rounded-lg">
-          <div className="text-3xl font-bold"></div>
-          <div className="text-sm text-muted-foreground"></div>
+          <div className="text-3xl font-bold">Dartmouth</div>
+          <div className="text-sm text-muted-foreground">Proudly Local</div>
+        </div>
+        <div className="p-6 bg-muted rounded-lg">
+          <div className="text-3xl font-bold">3 Munks</div>
+          <div className="text-sm text-muted-foreground">1 Human</div>
         </div>
       </div>
     </section>

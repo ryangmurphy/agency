@@ -6,7 +6,7 @@ import { ArrowRight, Mountain } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-//import ThemeToggle from '@/components/theme-toggle';
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -19,8 +19,8 @@ import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
   return (
-    <div className="px-4 left-0 right-0 top-0 py-6 z-50">
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/40 px-6 py-3 shadow-sm backdrop-blur-2xl">
+    <div className="px-4 left-0 right-0 top-0 py-6 sticky z-50">
+      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/20 px-6 py-3 shadow-sm backdrop-blur-2xl">
         <Link href="/" className="flex items-center space-x-2">
           <Mountain className="h-6 w-6" />
           <span className="text-xl font-semibold">Agency</span>
@@ -38,10 +38,7 @@ export default function Navbar() {
                   >
                     Modern, responsive, and scalable websites.
                   </ListItem>
-                  <ListItem
-                    href="/services/web-development"
-                    title="Web Design"
-                  >
+                  <ListItem href="/services/web-development" title="Web Design">
                     Visually stunning custom UX/UI
                   </ListItem>
                   <ListItem
@@ -52,12 +49,6 @@ export default function Navbar() {
                   </ListItem>
                   <ListItem href="/services/ecommerce" title="Ecommerce">
                     Build powerful online shopping experience.
-                  </ListItem>
-                  <ListItem
-                    href="/services/ai-integration"
-                    title="AI Integration"
-                  >
-                    Smarter workflows powered by AI tools.
                   </ListItem>
                   <ListItem href="/services/technologies" title="Technologies">
                     Cutting-edge tools for future-ready solutions.
@@ -108,9 +99,10 @@ export default function Navbar() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
+            <ThemeToggle />
           </NavigationMenuList>
         </NavigationMenu>
-        <ThemeToggle />
+
         <Link href="/contact">
           <Button className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
             Connect

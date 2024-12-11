@@ -49,6 +49,7 @@ export default function ContactForm() {
     defaultValues: {
       firstName: "",
       lastName: "",
+      company: "",
       email: "",
       phone: "",
       message: "",
@@ -91,9 +92,9 @@ export default function ContactForm() {
                         <FormControl>
                           <Input
                             id="firstName"
-                            placeholder="John"
+                            placeholder=""
                             type="text"
-                            className="border-2 shadow-md dark:shadow-sm dark:shadow-white"
+                            className="border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white"
                             autoComplete="first name"
                             {...field}
                           />
@@ -112,9 +113,9 @@ export default function ContactForm() {
                         <FormControl>
                           <Input
                             id="lastName"
-                            placeholder="Doe"
+                            placeholder=""
                             type="text"
-                            className="border-2 shadow-md dark:shadow-sm dark:shadow-white"
+                            className="border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white"
                             autoComplete="last name"
                             {...field}
                           />
@@ -124,6 +125,26 @@ export default function ContactForm() {
                     )}
                   />
                 </div>
+
+                {/* Company Field */}
+                <FormField
+                  control={form.control}
+                  name="company"
+                  render={({ field }) => (
+                    <FormItem className="grid gap-2">
+                      <FormLabel htmlFor="company">Business Name</FormLabel>
+                      <FormControl>
+                        <Input
+                          id="company"
+                          placeholder=""
+                          className="border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
                 {/* Phone Field */}
                 <FormField
@@ -137,7 +158,7 @@ export default function ContactForm() {
                           id="phone"
                           placeholder=""
                           type="phone"
-                          className="border-2 shadow-md dark:shadow-sm dark:shadow-white"
+                          className="border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white"
                           autoComplete="phone"
                           {...field}
                         />
@@ -157,9 +178,9 @@ export default function ContactForm() {
                       <FormControl>
                         <Input
                           id="email"
-                          placeholder="johndoe@mail.com"
+                          placeholder=""
                           type="email"
-                          className="border-2 shadow-md dark:shadow-sm dark:shadow-white"
+                          className="border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white"
                           autoComplete="email"
                           {...field}
                         />
@@ -179,8 +200,8 @@ export default function ContactForm() {
                       <FormControl>
                         <Textarea
                           id="message"
-                          placeholder="Your message..."
-                          className="resize-none h-[150px] border-2 shadow-md dark:shadow-sm dark:shadow-white"
+                          placeholder="Tell us about your business and project.."
+                          className="resize-none h-[150px] border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white "
                           autoComplete="off"
                           {...field}
                         />
@@ -194,7 +215,7 @@ export default function ContactForm() {
                   control={form.control}
                   name="isHuman"
                   render={({ field }) => (
-                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border-2 p-4 shadow-md dark:shadow-sm dark:shadow-white">
+                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border-2 border-primary/40 p-4 shadow-md dark:shadow-sm dark:shadow-white">
                       <FormControl>
                         <Checkbox
                           checked={field.value}
