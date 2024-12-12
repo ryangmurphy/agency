@@ -38,7 +38,7 @@ export default function Navbar() {
                   >
                     Modern, responsive, and scalable websites.
                   </ListItem>
-                  <ListItem href="/services/web-development" title="Web Design">
+                  <ListItem href="/services/web-design" title="Web Design">
                     Visually stunning custom UX/UI
                   </ListItem>
                   <ListItem

@@ -1,8 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Star, VerifiedIcon } from "lucide-react";
+import Link from "next/link";
 
 type Testimonial = {
   company: string;
+  link: string;
   quote: string;
   author: string;
   title: string;
@@ -12,26 +14,29 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     company: "Blended Athletics",
+    link: "https://blendedathletics.com",
     quote:
-      "The agency took our vision and turned it into a dynamic online platform. Our clients rave about the seamless experience—it's been a game-changer for our business.",
-    author: "John Smith",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet ultrices turpis sit amet sagittis. Donec placerat tortor eros. Nam cursus magna et leo aliquam,",
+    author: "Dave Rafuse",
     title: "CEO & Owner",
     rating: 5,
   },
   {
-    company: "TopCoat",
+    company: "LevelUp Apparel",
+    link: "https://blendedathletics.com",
     quote:
-      "From concept to launch, the  team was exceptional. Our site is fast, intuitive, and perfectly tailored to our brand. I can't recommend them enough!",
-    author: "John Smith",
-    title: "CEO",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet ultrices turpis sit amet sagittis. Donec placerat tortor eros. Nam cursus magna et leo aliquam,",
+    author: "Mike Carew",
+    title: "Owner",
     rating: 5,
   },
   {
-    company: "LevelUp Apparel",
+    company: "TopCoat",
+    link: "https://blendedathletics.com",
     quote:
-      "Working with was the best decision for our digital transformation. They delivered a website that not only looks amazing but has streamlined our operations.",
-    author: "John Smith",
-    title: "Owner",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet ultrices turpis sit amet sagittis. Donec placerat tortor eros. Nam cursus magna et leo aliquam,",
+    author: "Nick McKenzie",
+    title: "CEO",
     rating: 5,
   },
 ];
@@ -56,14 +61,25 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <Card className="border-0 shadow-none">
       <CardContent className="space-y-4">
-        <div className="font-serif text-2xl pt-4">{testimonial.company}</div>
+        <div className="font-serif text-2xl pt-4">
+          <Link href={testimonial.link} target="_blank" className="hover:underline hover:text-emerald-600">
+            {testimonial.company}
+          </Link>
+        </div>
         <StarRating rating={testimonial.rating} />
         <blockquote className="text-lg">
           &ldquo;{testimonial.quote}&rdquo;
         </blockquote>
         <div className="space-y-1">
-          <div className="font-medium">{testimonial.author}</div>
-          <div className="text-sm text-muted-foreground">{testimonial.title}</div>
+          <div className="flex items-center gap-2 font-medium">
+            {testimonial.author}
+            <span>
+              <VerifiedIcon />
+            </span>
+          </div>
+          <div className="text-sm text-muted-foreground">
+            {testimonial.title}
+          </div>
         </div>
       </CardContent>
     </Card>

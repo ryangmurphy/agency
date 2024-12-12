@@ -99,7 +99,6 @@ export default function ContactForm() {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -120,7 +119,6 @@ export default function ContactForm() {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -141,7 +139,7 @@ export default function ContactForm() {
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
+                     
                     </FormItem>
                   )}
                 />
@@ -163,7 +161,6 @@ export default function ContactForm() {
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -185,7 +182,6 @@ export default function ContactForm() {
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -206,7 +202,6 @@ export default function ContactForm() {
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -227,7 +222,6 @@ export default function ContactForm() {
                         <FormDescription>
                           Check the box to make sure!
                         </FormDescription>
-                        <FormMessage />
                       </div>
                     </FormItem>
                   )}

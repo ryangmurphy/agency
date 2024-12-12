@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Brain, BarChartIcon as ChartBar, Cog } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Accordion,
   AccordionContent,
@@ -10,27 +8,8 @@ import {
 } from "@/components/ui/accordion"
 
 import Link from "next/link";
+import HowItWorks from "@/components/HowItWorks";
 
-const services = [
-  {
-    icon: Brain,
-    title: "Lorem Ipsum",
-    description:
-      "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum",
-  },
-  {
-    icon: ChartBar,
-    title: "Lorem Ipsum",
-    description:
-      "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum",
-  },
-  {
-    icon: Cog,
-    title: "Lorem Ipsum",
-    description:
-      "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum",
-  },
-];
 
 export default function WebDevelopment() {
   return (
@@ -119,6 +98,16 @@ export default function WebDevelopment() {
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="">
+                  Accessibility Compliance
+                </AccordionTrigger>
+                <AccordionContent className="">
+                  Ensure your website is inclusive and compliant with
+                  accessibility standards like WCAG, making it user-friendly for
+                  all audiences.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="">
                   Scalable Web Architecture
                 </AccordionTrigger>
                 <AccordionContent className="">
@@ -126,16 +115,6 @@ export default function WebDevelopment() {
                   scalable architecture ensures your site remains fast, secure,
                   and capable of handling increasing traffic as your business
                   expands.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="">
-                  Accessibility Compliance
-                </AccordionTrigger>
-                <AccordionContent className="">
-                  Ensure your website is inclusive and compliant with
-                  accessibility standards like WCAG, making it user-friendly for
-                  all audiences.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
@@ -165,23 +144,8 @@ export default function WebDevelopment() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-24">
-        <h2 className="text-3xl font-bold md:text-4xl text-center pb-8">
-          How does it work?
-        </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <Card key={index} className="">
-              <CardHeader>
-                <service.icon className="h-12 w-12 text-emerald-600" />
-                <CardTitle className="text-xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300">{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      <div className="mx-auto py-24">
+        <HowItWorks />
       </div>
       <div className="w-full max-w-3xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold sm:text-4xl">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroBadge } from "@/components/HeroBadge";
 import SocialProof from "./SocialProof";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 
 
@@ -19,7 +20,7 @@ export default function Hero() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Build Smarter. Grow Faster.
             </h1>
-            <p className="mx-auto max-w-[700px] text-lg text-muted-foreground sm:text-xl py-8">
+            <p className="mx-auto max-w-[700px] text-lg text-muted-foreground sm:text-xl py-6">
               Websites, apps, and software crafted to elevate your brand and
               grow your business. From idea to execution—your vision, our
               expertise.
@@ -42,17 +43,24 @@ export default function Hero() {
               <Link href="/work">View Our Work</Link>
             </Button>
           </div>
-          <div className="pt-2">
+          <div className="py-8">
             <SocialProof />
           </div>
-          <div className="relative pt-12 w-full">
-            <div className="overflow-hidden rounded-lg border bg-background shadow-2x">
+          <div className="relative w-full">
+            <div className="overflow-hidden rounded-lg shadow-2xl">
               <Image
-                src="/placeholder.svg?height=600&width=1200"
-                width={1200}
-                height={600}
+                src="/hero/dalle3.webp"
+                width={1920}
+                height={1080}
                 alt="Project Dashboard Preview"
                 className="w-full object-cover "
+              />
+              <BorderBeam
+                size={250}
+                borderWidth={3}
+                duration={30}
+                colorFrom="#1A4d2E"
+                colorTo="#a3b18a"
               />
             </div>
           </div>

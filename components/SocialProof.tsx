@@ -17,7 +17,7 @@ const companies: Company[] = [
 export default function Companies() {
   return (
     <section id="companies">
-      <div className="pt-14">
+      <div className="">
         <div className="container mx-auto px-4 md:px-8">
           <h3 className="text-center text-lg font-semibold text-muted-foreground">
             TRUSTED BY LEADING MARITIMES BUSINESSES

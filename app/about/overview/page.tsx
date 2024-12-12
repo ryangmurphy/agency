@@ -16,7 +16,9 @@ export default function OverviewPage() {
           </h1>
 
           <p className="text-lg text-muted-foreground">
-            The Munk Devs are proud to be a Nova Scotia based business,
+            The Munk Devs are proud to be a{" "}
+            <span className="text-primary font-bold">Nova Scotia</span> based
+            business,
             <br /> but our ideas and impact reach far beyond. We believe in the
             power of collaboration, innovation, and connection to bring
             transformative solutions to life. Partnering locally and globally,
@@ -53,13 +55,13 @@ export default function OverviewPage() {
             Streamlining Digital Presence to Maximize Business Value
           </h2>
           <p className="text-lg text-muted-foreground">
-            We provide <span className="text-primary">intuitive solutions</span>{" "}
+            We provide <span className="text-primary font-bold">intuitive solutions</span>{" "}
             for managing and scaling web development. We offer{" "}
-            <span className="text-primary">seamless integrations</span>, clear
+            <span className="text-primary font-bold">seamless integrations</span>, clear
             abstractions, and{" "}
-            <span className="text-primary">powerful tools</span> to enhance
+            <span className="text-primary font-bold">powerful tools</span> to enhance
             business productivity and value across teams of{" "}
-            <span className="text-primary">all sizes</span> and experience
+            <span className="text-primary font-bold">all sizes</span> and experience
             levels.
           </p>
         </div>
@@ -110,15 +112,15 @@ export default function OverviewPage() {
         <div className="space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold">Why We Began</h2>
           <div className="space-y-4">
-            <p className="text-muted-foreground">
-              The Munk Devs are proud to be a Nova Scotia based business.
-              We&apos;ve seen firsthand the challenges businesses face with
-              complex digital needs. Additionally, we noticed a gap in modern
-              tech solutions available in Atlantic Canada. Our company is
-              designed to help businesses scale their online presence, automate
-              tasks, and most importantly generate value.
+            <p className="text-muted-foreground text-lg">
+              The Munk Devs are located in Dartmouth, Nova Scotia. We&apos;ve
+              seen firsthand the challenges businesses face with complex digital
+              needs. Additionally, we noticed a gap in modern tech solutions
+              available in Atlantic Canada. Our company is designed to help
+              businesses scale their online presence, automate tasks, and most
+              importantly generate value.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Our mission is to provide businesses with the tools they need to
               build and scale projects efficiently. We believe that by removing
               the barriers to entry, collaboration and productivity, we can help

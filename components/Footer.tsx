@@ -19,8 +19,6 @@ const sections = [
     links: [
       { name: "About", href: "/about/overview" },
       { name: "Team", href: "/about/team" },
-      { name: "Blog", href: "/blog" },
-      { name: "Newsletter", href: "/newsletter" },
     ],
   },
   {
