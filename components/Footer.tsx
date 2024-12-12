@@ -97,10 +97,10 @@ const Footer7 = () => {
             <p>© 2024 MunkDevs. All rights reserved.</p>
             <ul className="flex justify-center gap-4 lg:justify-start">
               <li className="hover:text-primary">
-                <a href="#"> Terms and Conditions</a>
+                <a href="/terms-of-service"> Terms and Conditions</a>
               </li>
               <li className="hover:text-primary">
-                <a href="#"> Privacy Policy</a>
+                <a href="/privacy-policy"> Privacy Policy</a>
               </li>
             </ul>
           </div>

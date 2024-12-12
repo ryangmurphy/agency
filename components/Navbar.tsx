@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { ArrowRight, Mountain } from "lucide-react";
+import { ArrowRight, Trees } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -20,10 +20,10 @@ import ThemeToggle from "./theme-toggle";
 export default function Navbar() {
   return (
     <div className="px-4 left-0 right-0 top-0 py-6 sticky z-50">
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/20 px-6 py-3 shadow-sm backdrop-blur-2xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/10 border border-white/50 px-6 py-3 shadow-md backdrop-blur-2xl">
         <Link href="/" className="flex items-center space-x-2">
-          <Mountain className="h-6 w-6" />
-          <span className="text-xl font-semibold">Agency</span>
+          <Trees className="h-6 w-6" />
+          <span className="text-xl font-semibold">Everpine</span>
         </Link>
 
         <NavigationMenu className="hidden md:flex">
@@ -104,7 +104,7 @@ export default function Navbar() {
         </NavigationMenu>
 
         <Link href="/contact">
-          <Button className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button className="rounded-full bg-primary font-bold text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-all duration-300">
             Connect
             <ArrowRight className="h-4 w-4" />
           </Button>

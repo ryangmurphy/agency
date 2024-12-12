@@ -73,7 +73,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         <div className="space-y-1">
           <div className="flex items-center gap-2 font-medium">
             {testimonial.author}
-            <span>
+            <span className="text-emerald-600">
               <VerifiedIcon />
             </span>
           </div>

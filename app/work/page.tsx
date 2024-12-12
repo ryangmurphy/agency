@@ -1,4 +1,4 @@
-import { BentoGrid } from "@/components/WorkGrid"
+import { BentoGrid } from "@/components/work/WorkGrid"
 
 const companies = [
   {

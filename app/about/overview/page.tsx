@@ -7,7 +7,7 @@ export default function OverviewPage() {
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-24">
       <div className="grid md:grid-cols-2 gap-24 items-start">
         <div className="space-y-4">
-          <div className="text-sm font-medium text-primary">ABOUT US</div>
+          <div className="text-sm font-medium">ABOUT US</div>
           <h1 className="text-3xl md:text-4xl font-bold">
             Nova Scotia Based,
             <br /> Globally Connected,
@@ -15,9 +15,9 @@ export default function OverviewPage() {
             Innovating Together.
           </h1>
 
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-foreground">
             The Munk Devs are proud to be a{" "}
-            <span className="text-primary font-bold">Nova Scotia</span> based
+            <span className="text-blue-600 font-bold">Nova Scotia</span> based
             business,
             <br /> but our ideas and impact reach far beyond. We believe in the
             power of collaboration, innovation, and connection to bring
@@ -26,15 +26,15 @@ export default function OverviewPage() {
             ambitions.
           </p>
         </div>
-        <div className="relative aspect-video max-w-lg mx-auto">
+        <div className="relative aspect-video max-w-2xl mx-auto">
           <Image
-            src="/ns.jpg"
+            src="/about/NS_flag_map.svg"
             alt="Citaldel Hill Clock Tower"
-            width={400}
+            width={800}
             height={600}
-            className="w-full h-full"
+            className="w-full max-h-80"
           />
-          <p className="text-center mt-4 text-sm text-muted-foreground">
+          <p className="text-center mt-4 text-sm text-foreground">
             Committed to fostering growth and prosperity in businesses in
             Atlantic Canada
           </p>
@@ -54,15 +54,18 @@ export default function OverviewPage() {
           <h2 className="text-3xl md:text-4xl font-bold">
             Streamlining Digital Presence to Maximize Business Value
           </h2>
-          <p className="text-lg text-muted-foreground">
-            We provide <span className="text-primary font-bold">intuitive solutions</span>{" "}
+          <p className="text-lg text-foreground">
+            We provide{" "}
+            <span className="text-green-500 font-bold">intuitive solutions</span>{" "}
             for managing and scaling web development. We offer{" "}
-            <span className="text-primary font-bold">seamless integrations</span>, clear
-            abstractions, and{" "}
-            <span className="text-primary font-bold">powerful tools</span> to enhance
-            business productivity and value across teams of{" "}
-            <span className="text-primary font-bold">all sizes</span> and experience
-            levels.
+            <span className="text-green-500 font-bold">
+              seamless integrations
+            </span>
+            , clear abstractions, and{" "}
+            <span className="text-green-500 font-bold">powerful tools</span> to
+            enhance business productivity and value across teams of{" "}
+            <span className="text-green-500 font-bold">all sizes</span> and
+            experience levels.
           </p>
         </div>
       </div>
@@ -112,7 +115,7 @@ export default function OverviewPage() {
         <div className="space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold">Why We Began</h2>
           <div className="space-y-4">
-            <p className="text-muted-foreground text-lg">
+            <p className="text-foreground text-lg">
               The Munk Devs are located in Dartmouth, Nova Scotia. We&apos;ve
               seen firsthand the challenges businesses face with complex digital
               needs. Additionally, we noticed a gap in modern tech solutions
@@ -120,7 +123,7 @@ export default function OverviewPage() {
               businesses scale their online presence, automate tasks, and most
               importantly generate value.
             </p>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-foreground text-lg">
               Our mission is to provide businesses with the tools they need to
               build and scale projects efficiently. We believe that by removing
               the barriers to entry, collaboration and productivity, we can help
@@ -143,15 +146,15 @@ export default function OverviewPage() {
       <div className="grid grid-cols-3 gap-4 max-w-2xl">
         <div className="p-6 bg-muted rounded-lg">
           <div className="text-3xl font-bold">2024 Q4</div>
-          <div className="text-sm text-muted-foreground">Launched</div>
+          <div className="text-sm text-foreground">Launched</div>
         </div>
         <div className="p-6 bg-muted rounded-lg">
           <div className="text-3xl font-bold">Dartmouth</div>
-          <div className="text-sm text-muted-foreground">Proudly Local</div>
+          <div className="text-sm text-foreground">Proudly Local</div>
         </div>
         <div className="p-6 bg-muted rounded-lg">
           <div className="text-3xl font-bold">3 Munks</div>
-          <div className="text-sm text-muted-foreground">1 Human</div>
+          <div className="text-sm text-foreground">1 Human</div>
         </div>
       </div>
     </section>

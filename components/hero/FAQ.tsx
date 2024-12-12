@@ -7,7 +7,7 @@ import {
 
 export default function FAQ() {
   return (
-    <div className="max-w-2xl w-full h-auto overflow-x-none mx-auto rounded-2xl py-12 shadow-input">
+    <div className="max-w-2xl w-full h-auto overflow-x-none mx-auto rounded-2xl py-12 shadow-input px-4">
       <h1 className="font-bold text-4xl text-center pb-6">
         Frequently Asked Questions
       </h1>
@@ -27,9 +27,7 @@ export default function FAQ() {
             Do you work with businesses of all sizes?
           </AccordionTrigger>
           <AccordionContent>
-            Yes, we work with businesses of all sizes, ranging from startups and
-            small businesses to large corporations, as well as aspiring
-            entrepreneurs.
+            Yes, We collaborate with businesses of all sizes, including ambitious startups, growing small businesses, mid-sized enterprises, and established large corporations. We also love partnering with founders and aspiring entrepreneurs to bring their visions to life.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">

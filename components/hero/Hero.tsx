@@ -1,15 +1,16 @@
-import { Button } from "@/components/ui/button";
+
 import Image from "next/image";
 import Link from "next/link";
-import { HeroBadge } from "@/components/HeroBadge";
+import { HeroBadge } from "@/components/hero/HeroBadge";
 import SocialProof from "./SocialProof";
 import { BorderBeam } from "@/components/magicui/border-beam";
-
+import WordPullUp from "@/components/magicui/word-pull-up";
+import PulsatingButton from "@/components/magicui/pulsating-button";
 
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-background pt-16 md:py-24">
+    <section className="relative min-h-screen bg-background py-8 md:py-16">
       <div className="absolute inset-0 w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
       </div>
@@ -17,33 +18,23 @@ export default function Hero() {
         <div className="flex flex-col items-center space-y-8 text-center">
           <div className="space-y-4">
             <HeroBadge />
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Build Smarter. Grow Faster.
-            </h1>
-            <p className="mx-auto max-w-[700px] text-lg text-muted-foreground sm:text-xl py-6">
+            <WordPullUp
+              className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl"
+              words="Build Smarter. Grow Faster."
+            />
+            <p className="mx-auto max-w-[700px] text-lg text-foreground sm:text-xl pt-6">
               Websites, apps, and software crafted to elevate your brand and
               grow your business. From idea to execution—your vision, our
               expertise.
             </p>
-            <h2 className="text-xl font-bold">
-              Helping Canadian businesses scale their digital presence
-            </h2>
           </div>
 
-          <div className="flex flex-col gap-4 min-[400px]:flex-row">
-            <Button asChild size="lg" className="h-12 px-8 rounded-2xl">
-              <Link href="#contact">Book a Free Consultation</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="h-12 px-8 rounded-2xl"
-            >
-              <Link href="/work">View Our Work</Link>
-            </Button>
+          <div className="flex flex-col gap-4">
+            <Link href="/contact">
+              <PulsatingButton>Book a Free Consultation</PulsatingButton>
+            </Link>
           </div>
-          <div className="py-8">
+          <div className="py-7">
             <SocialProof />
           </div>
           <div className="relative w-full">
@@ -59,8 +50,8 @@ export default function Hero() {
                 size={250}
                 borderWidth={3}
                 duration={30}
-                colorFrom="#1A4d2E"
-                colorTo="#a3b18a"
+                colorFrom="#32CD32"
+                colorTo="#0096FF"
               />
             </div>
           </div>

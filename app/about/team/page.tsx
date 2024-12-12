@@ -1,5 +1,5 @@
 
-import Team from "@/components/Team"
+import Team from "@/components/about/Team"
 
 
 export default function TeamPage() {

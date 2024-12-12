@@ -15,7 +15,7 @@ const features = [
     name: "Web Development",
     description:
       "Build responsive and scalable websites to engage users and improve business outcomes.",
-    href: "/services/",
+    href: "/services/web-development",
     cta: "Learn more",
     background: (
       <Image
@@ -33,7 +33,7 @@ const features = [
     name: "App Development",
     description:
       "Create user-friendly mobile applications to connect with your audience anywhere.",
-    href: "/",
+    href: "/services/app-development",
     cta: "Learn more",
     background: (
       <Image
@@ -51,7 +51,7 @@ const features = [
     name: "Website Design",
     description:
       "Design visually appealing and intuitive websites to enhance user experience.",
-    href: "/",
+    href: "/services/website-design",
     cta: "Learn more",
     background: (
       <Image
@@ -69,7 +69,7 @@ const features = [
     name: "Ecommerce",
     description:
       "Build custom ecommerce website that is easy to use and scale with your business.",
-    href: "/",
+    href: "/services/ecommerce",
     cta: "Learn more",
     background: (
       <Image
@@ -87,7 +87,7 @@ const features = [
     name: "Search Engine Optimization",
     description:
       "Optimize your website to rank higher in search engines and attract more traffic.",
-    href: "/",
+    href: "/services/seo",
     cta: "Learn more",
     background: (
       <Image
@@ -104,7 +104,7 @@ const features = [
 
 export async function WhatWeDo() {
   return (
-    <div className="container mx-auto py-16">
+    <div className="container mx-auto py-16 px-4">
       <h1 className="text-semibold text-5xl font-bold text-center py-12">
         What We Do
       </h1>

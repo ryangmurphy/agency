@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 
 import Link from "next/link";
-import HowItWorks from "@/components/HowItWorks";
+import HowItWorks from "@/components/services/HowItWorks";
 
 export default function Technologies() {
   return (
