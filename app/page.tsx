@@ -11,7 +11,7 @@ import HeroContactSection from "@/components/hero/HeroContact";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Hero />
       <WhatWeDo />
       <Achievements />

@@ -23,7 +23,7 @@ export default function Companies() {
             TRUSTED BY LEADING MARITIMES BUSINESSES
           </h3>
           <div className="relative mt-6 overflow-hidden">
-            <div className="flex flex-row justify-center place-items-center gap-4">
+            <div className="flex flex-col md:flex-row justify-center place-items-center gap-4">
               {companies.map((company, idx) => (
                 <div key={idx} className="flex items-center justify-center">
                   <Image

@@ -1,6 +1,10 @@
-import { LinkedInLogoIcon, TwitterLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
-import { FacebookIcon } from "lucide-react";
 import Image from "next/image";
+import {
+  IconBrandLinkedinFilled,
+  IconBrandInstagram,
+  IconBrandMeta,
+  IconBrandX,
+} from "@tabler/icons-react";
 
 const sections = [
   {
@@ -29,7 +33,7 @@ const sections = [
   },
 ];
 
-const Footer7 = () => {
+const Footer = () => {
   return (
     <section className="py-12">
       <div className="h-[1px] bg-gradient-to-r from-transparent via-muted-foreground to-transparent my-6"></div>
@@ -55,22 +59,22 @@ const Footer7 = () => {
               <ul className="flex items-center space-x-6 text-muted-foreground">
                 <li className="font-medium hover:text-primary">
                   <a href="/">
-                    <LinkedInLogoIcon className="size-6" />
+                    <IconBrandLinkedinFilled className="size-7" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
                   <a href="/">
-                    <InstagramLogoIcon className="size-6" />
+                    <IconBrandInstagram className="size-7" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
                   <a href="/">
-                    <FacebookIcon className="size-6" />
+                    <IconBrandMeta className="size-7" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
                   <a href="/">
-                    <TwitterLogoIcon className="size-6" />
+                    <IconBrandX className="size-7" />
                   </a>
                 </li>
               </ul>
@@ -78,8 +82,8 @@ const Footer7 = () => {
             <div className="grid grid-cols-3 gap-6 lg:gap-20">
               {sections.map((section, sectionIdx) => (
                 <div key={sectionIdx}>
-                  <h3 className="mb-6 font-bold">{section.title}</h3>
-                  <ul className="space-y-4 text-sm text-muted-foreground">
+                  <h3 className="mb-2 md:mb-6 font-bold">{section.title}</h3>
+                  <ul className="space-y-2 md:space-y-4 text-sm text-muted-foreground">
                     {section.links.map((link, linkIdx) => (
                       <li
                         key={linkIdx}
@@ -96,10 +100,10 @@ const Footer7 = () => {
           <div className="mt-8 flex flex-col justify-between gap-4 border-t pt-8 text-center text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
             <p>© 2024 MunkDevs. All rights reserved.</p>
             <ul className="flex justify-center gap-4 lg:justify-start">
-              <li className="hover:text-primary">
+              <li className="md:text-sm text-xs hover:text-primary">
                 <a href="/terms-of-service"> Terms and Conditions</a>
               </li>
-              <li className="hover:text-primary">
+              <li className="md:text-sm text-xs hover:text-primary">
                 <a href="/privacy-policy"> Privacy Policy</a>
               </li>
             </ul>
@@ -110,4 +114,4 @@ const Footer7 = () => {
   );
 };
 
-export default Footer7;
+export default Footer;

@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { HeroBadge } from "@/components/hero/HeroBadge";
@@ -6,12 +5,13 @@ import SocialProof from "./SocialProof";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import WordPullUp from "@/components/magicui/word-pull-up";
 import PulsatingButton from "@/components/magicui/pulsating-button";
+import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-background py-8 md:py-16">
-      <div className="absolute inset-0 w-full">
+      <div className="absolute inset-0 max-w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
       </div>
       <div className="relative container mx-auto px-4 md:px-6">
@@ -31,25 +31,30 @@ export default function Hero() {
 
           <div className="flex flex-col gap-4">
             <Link href="/contact">
-              <PulsatingButton>Book a Free Consultation</PulsatingButton>
+              <PulsatingButton>Get Started Today</PulsatingButton>
             </Link>
           </div>
           <div className="py-7">
             <SocialProof />
           </div>
-          <div className="relative w-full">
-            <div className="overflow-hidden rounded-lg shadow-2xl">
+          <div className="relative w-full px-2">
+            <div className="overflow-hidden">
+              <Iphone15Pro
+                className="mx-auto relative z-10 drop-shadow-2xl p-2"
+                src="/hero/trainwithus.png"
+              />
               <Image
                 src="/hero/dalle3.webp"
+                alt="Train with Us"
                 width={1920}
                 height={1080}
-                alt="Project Dashboard Preview"
-                className="w-full object-cover "
+                className="mx-auto w-full h-full absolute z-0 top-0 left-0 rounded-2xl"
               />
               <BorderBeam
                 size={250}
                 borderWidth={3}
                 duration={30}
+                className="rounded-2xl"
                 colorFrom="#32CD32"
                 colorTo="#0096FF"
               />

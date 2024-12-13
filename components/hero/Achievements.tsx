@@ -10,11 +10,8 @@ const stats = [
 export default function Achievements() {
   return (
     <section id="stats">
-      <div className="container px-4 md:px-6 py-8 md:py-16 mx-auto">
+      <div className="container px-4 md:px-6 py-8 md:py-12 mx-auto">
         <div className="text-center space-y-4 py-4 mx-auto">
-          <h2 className="text-[24px] text-primary font-mono font-medium tracking-tight">
-            Our Achievements
-          </h2>
           <h4 className="text-[42px] font-medium mb-2 text-balance max-w-3xl mx-auto tracking-tighter">
             Powering innovation in the Maritimes
           </h4>

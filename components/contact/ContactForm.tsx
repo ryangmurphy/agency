@@ -138,7 +138,6 @@ export default function ContactForm() {
                           {...field}
                         />
                       </FormControl>
-                     
                     </FormItem>
                   )}
                 />
@@ -191,11 +190,12 @@ export default function ContactForm() {
                   name="message"
                   render={({ field }) => (
                     <FormItem className="grid gap-2">
-                      <FormLabel htmlFor="message">Message</FormLabel>
+                      <FormLabel htmlFor="message">
+                        How can we help you?
+                      </FormLabel>
                       <FormControl>
                         <Textarea
                           id="message"
-                          placeholder="Tell us about your business and project.."
                           className="resize-none h-[150px] border-2 border-primary/40 shadow-md dark:shadow-sm dark:shadow-white "
                           autoComplete="off"
                           {...field}

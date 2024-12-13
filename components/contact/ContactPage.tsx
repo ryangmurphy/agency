@@ -9,8 +9,12 @@ import {
   PhoneCallIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { LinkedInLogoIcon, TwitterLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
-import { FacebookIcon } from "lucide-react";
+import {
+  IconBrandLinkedinFilled,
+  IconBrandInstagram,
+  IconBrandMeta,
+  IconBrandX,
+} from "@tabler/icons-react";
 
 export default function ContactPage() {
   return (
@@ -60,22 +64,22 @@ export default function ContactPage() {
                   <ul className="flex items-center space-x-6 text-muted-foreground">
                     <li className="font-medium hover:text-primary">
                       <a href="/">
-                        <LinkedInLogoIcon className="size-8" />
+                        <IconBrandLinkedinFilled className="size-8" />
                       </a>
                     </li>
                     <li className="font-medium hover:text-primary">
                       <a href="/">
-                        <InstagramLogoIcon className="size-8" />
+                        <IconBrandInstagram className="size-8" />
                       </a>
                     </li>
                     <li className="font-medium hover:text-primary">
                       <a href="/">
-                        <FacebookIcon className="size-8" />
+                        <IconBrandMeta className="size-8" />
                       </a>
                     </li>
                     <li className="font-medium hover:text-primary">
                       <a href="/">
-                        <TwitterLogoIcon className="size-8" />
+                        <IconBrandX className="size-8" />
                       </a>
                     </li>
                   </ul>
