@@ -13,21 +13,52 @@ export default function FAQ() {
       </h1>
       <Accordion type="single" className="" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger className="text-left text-lg font-semibold">
-            What sets your agency apart from others?
-          </AccordionTrigger>
-          <AccordionContent>
-            We focus on creativity, innovation, and delivering measurable
-            results for our clients to create memorable brand experiences.{" "}
-            <span className="font-semibold">We give more than we take.</span>
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
           <AccordionTrigger className="text-left font-semibold text-lg">
             Do you work with businesses of all sizes?
           </AccordionTrigger>
           <AccordionContent>
-            Yes, We collaborate with businesses of all sizes, including ambitious startups, growing small businesses, mid-sized enterprises, and established large corporations. We also love partnering with founders and aspiring entrepreneurs to bring their visions to life.
+            Yes, We collaborate with businesses of all sizes, including
+            ambitious startups, growing small businesses, mid-sized enterprises,
+            and established large corporations. We also love partnering with
+            founders and aspiring entrepreneurs to bring their visions to life.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger className="text-left text-lg font-semibold">
+            What technology do you use?
+          </AccordionTrigger>
+          <AccordionContent>
+            We use cutting-edge technologies to create bespoke solutions for
+            websites, apps, and software, ensuring each project is optimized for
+            performance and scalability. Our approach starts with a deep
+            understanding of every business&apos;s unique needs, allowing us to
+            select the best tools for the job.
+            <br /> <br />
+            <ul className="list-disc space-y-4">
+              <li>
+                <span className="font-bold">Web Development:</span> We build
+                fast, responsive, and user-friendly websites using modern
+                React-based frameworks like Next.js and Svelte.
+              </li>
+
+              <li>
+                <span className="font-bold">
+                  Content Management Systems (CMS):
+                </span>{" "}
+                We primarily use PayloadCMS for its exceptional flexibility,
+                advanced features, and seamless integration with custom designs
+                and workflows, making it an ideal choice for businesses of all
+                sizes, from small startups to large enterprises. For e-commerce
+                solutions, we also leverage Shopify to create scalable and
+                robust online stores.
+              </li>
+              <li>
+                <span className="font-bold">Mobile Development:</span> For
+                mobile apps, we rely on React Native to create high-performance,
+                cross-platform solutions that work seamlessly on both iOS and
+                Android.
+              </li>
+            </ul>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
@@ -41,47 +72,56 @@ export default function FAQ() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger className="text-left text-lg font-semibold">
-            What is the full range of the services you offer?
+          <AccordionTrigger className="text-left text-lg  font-semibold">
+            What kinds of websites do you develop?
           </AccordionTrigger>
           <AccordionContent>
-            The Munk Devs offers a comprehensive suite of services to meet your
-            digital needs. We specialize in website development, including
-            custom design, responsive layouts, and e-commerce solutions.
-            Additionally, we provide a wide range of
+            We specialize in creating a wide variety of websites and
+            applications, tailored to meet the needs of businesses of all sizes.
+            Our expertise includes:
+            <br />
+            <br />
+            <ul className="list-disc space-y-4">
+              <li>
+                <span className="font-bold">
+                  Enterprise Websites and Applications
+                </span>{" "}
+                Scalable and secure solutions designed to support the complex
+                needs of large organizations and streamline operations.
+              </li>
+              <li>
+                <span className="font-bold">E-commerce Platforms:</span> Robust
+                online stores with seamless user experiences and powerful
+                management tools.
+              </li>
+              <li>
+                <span className="font-bold">Engaging Landing Pages:</span>{" "}
+                High-converting pages crafted to captivate audiences and drive
+                results.
+              </li>
+              <li>
+                <span className="font-bold">Fully Customized Solutions:</span>{" "}
+                Specialized websites and web applications tailored to your
+                specific goals and growth strategies.
+              </li>
+            </ul>
+            <br />
+            Whether you&apos;re a small business or a large enterprise, we
+            deliver solutions designed to elevate your online presence and
+            support your success.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <AccordionTrigger className="text-left text-lg  font-semibold">
-            What type of websites do you develop?
-          </AccordionTrigger>
-          <AccordionContent>
-            We create a wide range of websites tailored to your needs, from
-            e-commerce stores and landing pages to fully customized solutions
-            designed to elevate your business.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-6">
-          <AccordionTrigger className="text-left text-lg font-semibold">
-            What technology do you use?
-          </AccordionTrigger>
-          <AccordionContent>
-            We use the latest technology available to build our websites and our
-            marketing strategies. We use React-based Frameworks, Shopify,
-            Wordpress, Webflow, Framer, Adobe Creative Cloud, Third-Party Integrations, and more.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-7">
           <AccordionTrigger className="text-left text-lg font-semibold">
             Do you offer training and ongoing support?
           </AccordionTrigger>
           <AccordionContent>
-            After the completion of your project, we offer
-            comprehensive training sessions to ensure you are equipped to
-            effectively manage and utilize your new website/app. Additionally, we
-            provide maintenance and ongoing support services that can be
-            tailored to your specific needs, which we can discuss in detail
-            during your consultation.
+            After the completion of your project, we offer comprehensive
+            training sessions to ensure you are equipped to effectively manage
+            and utilize your new website/app. Additionally, we provide
+            maintenance and ongoing support services that can be tailored to
+            your specific needs, which we can discuss in detail during your
+            consultation.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

@@ -16,126 +16,107 @@ export default function WebDesign() {
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 py-24">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
-            Web Development that
+            Design that
             <br />
-            <span className="text-emerald-600">looks good,</span>
+            <span className="text-emerald-600">Captivates,</span>
             <br />
-            <span className="">performs great.</span>
+            <span className="">Converts & Connects</span>
           </h1>
           <p className="text-lg max-w-xl">
-            We specialize in crafting visually stunning, highly functional, and
-            user-focused websites that bring your brand to life. Whether
-            you&apos;re looking for a sleek e-commerce platform, an engaging
-            portfolio, or a dynamic web app, our team of expert developers
-            combines cutting-edge technologies with creative design to deliver
-            custom solutions that meet your unique business needs. Let us
-            transform your vision into a digital experience that drives results.
+            Transform your digital presence with web design that goes beyond
+            aesthetics. We craft pixel-perfect, strategically designed websites
+            that tell your brand&apos;s story, engage your audience, and drive
+            meaningful interactions. Our design approach blends creative
+            excellence with user-centric functionality to create digital
+            experiences that leave a lasting impression.
           </p>
           <Button className="bg-emerald-600 hover:bg-emerald-700" size="lg">
-            Start Now
+            Get Design Consultation
           </Button>
         </div>
         <div className="relative h-[300px] lg:h-[400px]">
           <Image
-            src="/services/webdev.svg"
-            alt="AI Marketing Illustration"
+            src="/services/webdesign.svg"
+            alt="Web Design Illustration"
             fill
             className="object-contain"
           />
         </div>
       </div>
-      {/*Logo cloud 
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="mb-12 text-center text-xl text-gray-200">
-          We've helped some of the top brands in the world win in the age of AI
-        </h2>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-          {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="flex items-center justify-center">
-              <Image
-                src="/placeholder.svg?height=40&width=120"
-                alt={`Client logo ${i + 1}`}
-                width={120}
-                height={40}
-                className="opacity-50 grayscale transition-opacity hover:opacity-100"
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
+
       <div className="container mx-auto px-4 py-24">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="relative h-[400px]">
             <Image
-              src="/services/devprod.svg"
-              alt="Features illustration"
+              src="/services/designprocess.svg"
+              alt="Design Process Illustration"
               fill
               className="object-contain"
             />
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Features & Insights
+              Design Philosophy & Capabilities
             </h2>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quos.
+            <p className="text-lg">
+              We believe great design is more than visual appeal—it&apos;s a
+              strategic tool that communicates your brand&apos;s essence, guides
+              user behavior, and creates memorable digital experiences that
+              differentiate you in a crowded marketplace.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="">
-                  Responsive Web Design
+                  Brand-Aligned Visual Design
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Ensure your website looks stunning and functions flawlessly on
-                  all devices, from desktops to smartphones. Our responsive
-                  design techniques create seamless user experiences across
-                  screen sizes.
+                  Create a cohesive visual identity that reflects your
+                  brand&apos;s personality. We develop custom design systems
+                  that maintain consistency across all digital touchpoints, from
+                  color palettes to typography.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="">
-                  Accessibility Compliance
+                  User Experience (UX) Design
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Ensure your website is inclusive and compliant with
-                  accessibility standards like WCAG, making it user-friendly for
-                  all audiences.
+                  Design intuitive, frictionless user journeys that guide
+                  visitors towards your key business objectives. Our UX approach
+                  combines user research, wireframing, and strategic interaction
+                  design.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="">
-                  Scalable Web Architecture
+                  Responsive Design Mastery
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Build web solutions designed to grow with your business. Our
-                  scalable architecture ensures your site remains fast, secure,
-                  and capable of handling increasing traffic as your business
-                  expands.
+                  Ensure a seamless experience across all devices. Our
+                  responsive design techniques guarantee your website looks
+                  stunning and functions perfectly from mobile phones to large
+                  desktop monitors.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger className="">
-                  Custom Web Applications
+                  Interactive & Animated Experiences
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Create powerful, feature-rich web applications tailored to
-                  your unique needs. Our team combines the latest technologies
-                  and best practices to deliver solutions that drive engagement
-                  and streamline operations.
+                  Elevate user engagement with thoughtful, performance-optimized
+                  animations and interactions. We use cutting-edge techniques to
+                  create dynamic experiences that delight and retain users.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger className="">
-                  Advanced Security Measures
+                  Accessibility & Inclusive Design
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Protect your digital assets and user data with our advanced
-                  security protocols. From secure coding practices to robust
-                  encryption, we prioritize keeping your website safe from
-                  threats.
+                  Create websites that are beautiful and accessible to all
+                  users, including those with disabilities. We follow WCAG
+                  guidelines to ensure your design is both stunning and
+                  universally usable.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -148,16 +129,18 @@ export default function WebDesign() {
       </div>
       <div className="w-full max-w-3xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold sm:text-4xl">
-          <span className="block">Let&apos;s Build Your Website</span>
+          <span className="block">
+            Ready to Redesign Your Digital Presence?
+          </span>
         </h2>
         <p className="mt-4 text-xl text-muted-foreground">
-          Custom website&apos;s that looks good, performs great, and drives
+          Let&apos;s create a design that tells your unique story and drives
           results.
         </p>
         <div className="mt-8">
           <Link href="/contact" passHref>
             <Button size="lg" className="text-lg px-8 py-3">
-              Book a Meeting
+              Schedule Design Consultation
             </Button>
           </Link>
         </div>

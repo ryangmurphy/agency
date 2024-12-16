@@ -7,11 +7,10 @@ interface Company {
 
 const companies: Company[] = [
   { name: "Blended Athletics", logo: "/hero/ba-logo-black.png" },
-  { name: "OPCardGame", logo: "/opcardlogo.png" },
+  { name: "TopCoat", logo: "/hero/topcoat-black.png" },
+  { name: "Train With Us", logo: "/hero/train-with-us.png" },
   { name: "LevelUp", logo: "/hero/level-up.png" },
-  { name: "TopCoat", logo: "/hero/topcoat-black.png" },
-  { name: "TopCoat", logo: "/hero/topcoat-black.png" },
-  { name: "TopCoat", logo: "/hero/topcoat-black.png" },
+  { name: "OPCardGame", logo: "/hero/op-black.png" },
 ];
 
 export default function Companies() {

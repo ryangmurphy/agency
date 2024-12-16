@@ -10,7 +10,7 @@ import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-background py-8 md:py-16">
+    <section className="relative min-h-screen bg-background py-8 md:py-16 overflow-hidden">
       <div className="absolute inset-0 max-w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
       </div>
@@ -22,7 +22,7 @@ export default function Hero() {
               className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl"
               words="Build Smarter. Grow Faster."
             />
-            <p className="mx-auto max-w-[700px] text-lg text-foreground sm:text-xl pt-6">
+            <p className="mx-auto max-w-[700px] text-lg text-foreground sm:text-xl md:pt-6">
               Websites, apps, and software crafted to elevate your brand and
               grow your business. From idea to execution—your vision, our
               expertise.
@@ -40,16 +40,18 @@ export default function Hero() {
           <div className="relative w-full px-2">
             <div className="overflow-hidden">
               <Iphone15Pro
-                className="mx-auto relative z-10 drop-shadow-2xl p-2"
+                className="mx-auto relative z-10 p-2 w-full"
                 src="/hero/trainwithus.png"
               />
+              {/*
               <Image
-                src="/hero/dalle3.webp"
+                src=""
                 alt="Train with Us"
                 width={1920}
                 height={1080}
-                className="mx-auto w-full h-full absolute z-0 top-0 left-0 rounded-2xl"
-              />
+                className="mx-auto w-full h-full absolute z-0 top-0 left-0 rounded-2xl hidden md:block"
+              /> 
+              
               <BorderBeam
                 size={250}
                 borderWidth={3}
@@ -57,7 +59,7 @@ export default function Hero() {
                 className="rounded-2xl"
                 colorFrom="#32CD32"
                 colorTo="#0096FF"
-              />
+              /> */}
             </div>
           </div>
         </div>

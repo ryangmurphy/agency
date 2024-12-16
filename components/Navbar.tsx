@@ -2,10 +2,11 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { ArrowRight, Trees } from "lucide-react";
+import { ArrowRight, Trees, Menu, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import {
   NavigationMenu,
@@ -18,14 +19,108 @@ import {
 import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
+  // Reusable ListItem component (same as original)
+  const ListItem = React.forwardRef<
+    React.ElementRef<"a">,
+    React.ComponentPropsWithoutRef<"a">
+  >(({ className, title, children, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            ref={ref}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className
+            )}
+            {...props}
+          >
+            <div className="text-sm font-medium leading-none">{title}</div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+              {children}
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    );
+  });
+  ListItem.displayName = "ListItem";
+
+  // Mobile Navigation Links
+  const MobileNavLinks = () => (
+    <div className="flex flex-col space-y-4 p-4">
+      <div className="group">
+        <div className="font-bold mb-2">Services</div>
+        <div className="space-y-2">
+          <MobileNavLink href="/services/web-development">
+            Web Development
+          </MobileNavLink>
+          <MobileNavLink href="/services/web-design">Web Design</MobileNavLink>
+          <MobileNavLink href="/services/app-development">
+            App Development
+          </MobileNavLink>
+          <MobileNavLink href="/services/ecommerce">Ecommerce</MobileNavLink>
+          <MobileNavLink href="/services/technologies">
+            Technologies
+          </MobileNavLink>
+          <MobileNavLink href="/services/seo">SEO</MobileNavLink>
+        </div>
+      </div>
+
+      <Link href="/work">
+        <span className="font-bold">Work</span>
+      </Link>
+
+      <div className="group">
+        <div className="font-semibold mb-2">About</div>
+        <div className="space-y-2 pl-2">
+          <MobileNavLink href="/about/team">Our Team</MobileNavLink>
+          <MobileNavLink href="/about/overview">Overview</MobileNavLink>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <span>Theme</span>
+        <ThemeToggle />
+      </div>
+
+      <Link href="/contact" className="w-full">
+        <Button className="w-full rounded-full bg-primary font-bold text-primary-foreground hover:bg-primary/90">
+          Connect
+          <ArrowRight className="h-4 w-4 ml-2" />
+        </Button>
+      </Link>
+    </div>
+  );
+
+  // Mobile Navigation Link Component
+  const MobileNavLink = ({
+    href,
+    children,
+  }: {
+    href: string;
+    children: React.ReactNode;
+  }) => (
+    <Link
+      href={href}
+      className="block py-2 hover:bg-accent rounded-md px-2 transition-colors hover:text-accent-foreground hover:underline-offset-2 hover:underline"
+      onClick={() => setIsMobileMenuOpen(false)}
+    >
+      {children}
+    </Link>
+  );
+
   return (
     <div className="px-4 left-0 right-0 top-0 py-6 sticky z-50">
-      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/10 border border-white/50 px-6 py-3 shadow-md backdrop-blur-2xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/10 border border-white/50 px-6 py-3 shadow-lg backdrop-blur-sm">
         <Link href="/" className="flex items-center space-x-2">
           <Trees className="h-6 w-6" />
-          <span className="text-xl font-semibold">Everpine</span>
+          <span className="text-xl font-semibold">MunkDevs</span>
         </Link>
 
+        {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -62,7 +157,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <a
                 href="/work"
-                className="text-primary cursor-pointer group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:opacity-50"
+                className="text-primary cursor-pointer group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:opacity-50"
               >
                 Work
               </a>
@@ -89,13 +184,6 @@ export default function Navbar() {
                   <ListItem href="/about/overview" title="Overview">
                     Learn about our story and mission values
                   </ListItem>
-                  {/*
-                  <ListItem href="/about/blog" title="Blog">
-                    Sign up for our newsletter and blog
-                  </ListItem>
-                  <ListItem href="/news" title="News">
-                    News
-                  </ListItem> */}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -103,7 +191,26 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <Link href="/contact">
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden">
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="rounded-full">
+                {isMobileMenuOpen ? (
+                  <X className="h-6 w-6" />
+                ) : (
+                  <Menu className="h-8 w-8" />
+                )}
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px]">
+              <MobileNavLinks />
+            </SheetContent>
+          </Sheet>
+        </div>
+
+        {/* Desktop Connect Button */}
+        <Link href="/contact" className="hidden md:block">
           <Button className="rounded-full bg-primary font-bold text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-all duration-300">
             Connect
             <ArrowRight className="h-4 w-4" />
@@ -113,29 +220,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";

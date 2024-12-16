@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
-          <div className="flex flex-col min-h-screen overflow-hidden">
+          <div className="flex flex-col min-h-screen">
             <Navbar />
             <main>{children}</main>
             <Footer />

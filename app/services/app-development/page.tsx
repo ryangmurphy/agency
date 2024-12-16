@@ -16,126 +16,110 @@ export default function AppDevelopment() {
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 py-24">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
-            Web Development that
+            Mobile & Web
             <br />
-            <span className="text-emerald-600">looks good,</span>
+            <span className="text-emerald-600">Apps</span>
             <br />
-            <span className="">performs great.</span>
+            <span className="">That Innovate & Perform</span>
           </h1>
           <p className="text-lg max-w-xl">
-            We specialize in crafting visually stunning, highly functional, and
-            user-focused websites that bring your brand to life. Whether
-            you&apos;re looking for a sleek e-commerce platform, an engaging
-            portfolio, or a dynamic web app, our team of expert developers
-            combines cutting-edge technologies with creative design to deliver
-            custom solutions that meet your unique business needs. Let us
-            transform your vision into a digital experience that drives results.
+            Transform your innovative ideas into powerful, user-centric
+            applications that solve real-world problems. Our expert development
+            team specializes in creating custom mobile and web applications that
+            are not just technologically advanced, but strategically designed to
+            drive business growth, enhance user engagement, and give you a
+            competitive edge in the digital landscape.
           </p>
           <Button className="bg-emerald-600 hover:bg-emerald-700" size="lg">
-            Start Now
+            Discuss Your App Idea
           </Button>
         </div>
         <div className="relative h-[300px] lg:h-[400px]">
           <Image
-            src="/services/webdev.svg"
-            alt="AI Marketing Illustration"
+            src="/services/app-development.svg"
+            alt="App Development Illustration"
             fill
             className="object-contain"
           />
         </div>
       </div>
-      {/*Logo cloud 
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="mb-12 text-center text-xl text-gray-200">
-          We've helped some of the top brands in the world win in the age of AI
-        </h2>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-          {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="flex items-center justify-center">
-              <Image
-                src="/placeholder.svg?height=40&width=120"
-                alt={`Client logo ${i + 1}`}
-                width={120}
-                height={40}
-                className="opacity-50 grayscale transition-opacity hover:opacity-100"
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
+
       <div className="container mx-auto px-4 py-24">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="relative h-[400px]">
             <Image
-              src="/services/devprod.svg"
-              alt="Features illustration"
+              src="/services/app-features.svg"
+              alt="App Development Features Illustration"
               fill
               className="object-contain"
             />
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Features & Insights
+              Development Capabilities
             </h2>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quos.
+            <p className="text-lg">
+              We offer end-to-end app development services that cover the entire
+              product lifecycle. From initial concept and design to development,
+              deployment, and ongoing support, our holistic approach ensures
+              your application is robust, scalable, and aligned with your
+              business objectives.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="">
-                  Responsive Web Design
+                  Cross-Platform Development
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Ensure your website looks stunning and functions flawlessly on
-                  all devices, from desktops to smartphones. Our responsive
-                  design techniques create seamless user experiences across
-                  screen sizes.
+                  Maximize your reach with cross-platform applications that work
+                  seamlessly across iOS, Android, and web platforms. Utilize
+                  frameworks like React Native and Flutter to create consistent,
+                  high-performance apps that reduce development time and cost.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="">
-                  Accessibility Compliance
+                  Custom UI/UX Design
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Ensure your website is inclusive and compliant with
-                  accessibility standards like WCAG, making it user-friendly for
-                  all audiences.
+                  Create intuitive, visually stunning interfaces that provide
+                  exceptional user experiences. Our design process combines user
+                  research, interactive prototyping, and iterative design to
+                  craft applications that are both beautiful and highly
+                  functional.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="">
-                  Scalable Web Architecture
+                  Advanced Feature Integration
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Build web solutions designed to grow with your business. Our
-                  scalable architecture ensures your site remains fast, secure,
-                  and capable of handling increasing traffic as your business
-                  expands.
+                  Implement cutting-edge features like AI capabilities,
+                  real-time data synchronization, advanced analytics, machine
+                  learning, and complex integrations with third-party services
+                  to create truly innovative applications.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger className="">
-                  Custom Web Applications
+                  Performance Optimization
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Create powerful, feature-rich web applications tailored to
-                  your unique needs. Our team combines the latest technologies
-                  and best practices to deliver solutions that drive engagement
-                  and streamline operations.
+                  Develop lightning-fast applications with optimized code,
+                  efficient data management, and intelligent caching strategies.
+                  We ensure your app delivers a smooth, responsive experience
+                  even under heavy user load.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger className="">
-                  Advanced Security Measures
+                  Security & Compliance
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Protect your digital assets and user data with our advanced
-                  security protocols. From secure coding practices to robust
-                  encryption, we prioritize keeping your website safe from
-                  threats.
+                  Protect your application and user data with robust security
+                  measures. We implement end-to-end encryption, secure
+                  authentication, comprehensive vulnerability testing, and
+                  ensure compliance with industry standards and regulations.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -148,16 +132,15 @@ export default function AppDevelopment() {
       </div>
       <div className="w-full max-w-3xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold sm:text-4xl">
-          <span className="block">Let&apos;s Build Your Website</span>
+          <span className="block">Turn Your App Concept into Reality</span>
         </h2>
         <p className="mt-4 text-xl text-muted-foreground">
-          Custom website&apos;s that looks good, performs great, and drives
-          results.
+          Your innovative app is just a conversation away.
         </p>
         <div className="mt-8">
           <Link href="/contact" passHref>
             <Button size="lg" className="text-lg px-8 py-3">
-              Book a Meeting
+              Schedule App Consultation
             </Button>
           </Link>
         </div>

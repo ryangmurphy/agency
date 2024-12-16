@@ -10,132 +10,116 @@ import {
 import Link from "next/link";
 import HowItWorks from "@/components/services/HowItWorks";
 
-export default function ECommerce() {
+export default function EcommerceServices() {
   return (
     <section className="container mx-auto px-4">
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 py-24">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
-            Web Development that
+            E-commerce Solutions that
             <br />
-            <span className="text-emerald-600">looks good,</span>
+            <span className="text-emerald-600">Grow</span>
             <br />
-            <span className="">performs great.</span>
+            <span className="">Your Online Business</span>
           </h1>
           <p className="text-lg max-w-xl">
-            We specialize in crafting visually stunning, highly functional, and
-            user-focused websites that bring your brand to life. Whether
-            you&apos;re looking for a sleek e-commerce platform, an engaging
-            portfolio, or a dynamic web app, our team of expert developers
-            combines cutting-edge technologies with creative design to deliver
-            custom solutions that meet your unique business needs. Let us
-            transform your vision into a digital experience that drives results.
+            Unlock the full potential of your online store with our
+            comprehensive e-commerce development services. We create powerful,
+            user-friendly online shopping experiences that drive conversions,
+            enhance customer engagement, and scale with your business. From
+            boutique shops to enterprise-level marketplaces, we deliver custom
+            e-commerce solutions that transform browsers into buyers.
           </p>
           <Button className="bg-emerald-600 hover:bg-emerald-700" size="lg">
-            Start Now
+            Start Your E-commerce Journey
           </Button>
         </div>
         <div className="relative h-[300px] lg:h-[400px]">
           <Image
-            src="/services/webdev.svg"
-            alt="AI Marketing Illustration"
+            src="/services/ecommerce.svg"
+            alt="E-commerce Platform Illustration"
             fill
             className="object-contain"
           />
         </div>
       </div>
-      {/*Logo cloud 
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="mb-12 text-center text-xl text-gray-200">
-          We've helped some of the top brands in the world win in the age of AI
-        </h2>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-          {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="flex items-center justify-center">
-              <Image
-                src="/placeholder.svg?height=40&width=120"
-                alt={`Client logo ${i + 1}`}
-                width={120}
-                height={40}
-                className="opacity-50 grayscale transition-opacity hover:opacity-100"
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
+
       <div className="container mx-auto px-4 py-24">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="relative h-[400px]">
             <Image
-              src="/services/devprod.svg"
-              alt="Features illustration"
+              src="/services/ecommerce-features.svg"
+              alt="E-commerce Features Illustration"
               fill
               className="object-contain"
             />
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Features & Insights
+              E-commerce Capabilities
             </h2>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quos.
+            <p className="text-lg">
+              We don&apos;t just build online stores—we create comprehensive
+              digital commerce ecosystems that integrate seamlessly with your
+              business strategy, leveraging the latest technologies to drive
+              growth, improve customer experience, and maximize your online
+              potential.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="">
-                  Responsive Web Design
+                  Custom Platform Development
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Ensure your website looks stunning and functions flawlessly on
-                  all devices, from desktops to smartphones. Our responsive
-                  design techniques create seamless user experiences across
-                  screen sizes.
+                  Develop fully customized e-commerce platforms tailored to your
+                  unique business model. Whether you need a simple storefront or
+                  a complex multi-vendor marketplace, we create solutions that
+                  align perfectly with your brand and operational needs.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="">
-                  Accessibility Compliance
+                  Payment & Checkout Optimization
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Ensure your website is inclusive and compliant with
-                  accessibility standards like WCAG, making it user-friendly for
-                  all audiences.
+                  Implement secure, streamlined payment solutions that reduce
+                  cart abandonment and enhance user experience. We support
+                  multiple payment gateways, digital wallets, and seamless
+                  checkout processes that increase conversion rates.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="">
-                  Scalable Web Architecture
+                  Performance & Conversion Optimization
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Build web solutions designed to grow with your business. Our
-                  scalable architecture ensures your site remains fast, secure,
-                  and capable of handling increasing traffic as your business
-                  expands.
+                  Maximize your online store&apos;s performance with speed
+                  optimization, responsive design, and conversion-focused
+                  features. We implement advanced analytics, A/B testing, and
+                  user behavior tracking to continuously improve your
+                  store&apos;s effectiveness.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger className="">
-                  Custom Web Applications
+                  Inventory & Order Management
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Create powerful, feature-rich web applications tailored to
-                  your unique needs. Our team combines the latest technologies
-                  and best practices to deliver solutions that drive engagement
-                  and streamline operations.
+                  Integrate robust inventory management systems that provide
+                  real-time stock tracking, automated reordering, and seamless
+                  order fulfillment. Our solutions help you maintain optimal
+                  stock levels and provide a smooth customer experience.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger className="">
-                  Advanced Security Measures
+                  Advanced Security & Compliance
                 </AccordionTrigger>
                 <AccordionContent className="">
-                  Protect your digital assets and user data with our advanced
-                  security protocols. From secure coding practices to robust
-                  encryption, we prioritize keeping your website safe from
-                  threats.
+                  Protect your business and customers with enterprise-grade
+                  security measures. We implement PCI DSS compliance, secure
+                  payment gateways, fraud prevention, and robust data protection
+                  to ensure a safe shopping environment.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -148,16 +132,15 @@ export default function ECommerce() {
       </div>
       <div className="w-full max-w-3xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold sm:text-4xl">
-          <span className="block">Let&apos;s Build Your Website</span>
+          <span className="block">Transform Your Online Sales Strategy</span>
         </h2>
         <p className="mt-4 text-xl text-muted-foreground">
-          Custom website&apos;s that looks good, performs great, and drives
-          results.
+          Your e-commerce success starts with the right digital partner.
         </p>
         <div className="mt-8">
           <Link href="/contact" passHref>
             <Button size="lg" className="text-lg px-8 py-3">
-              Book a Meeting
+              Get E-commerce Consultation
             </Button>
           </Link>
         </div>
