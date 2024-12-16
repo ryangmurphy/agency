@@ -1,8 +1,8 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Link from "next/link";
 import { HeroBadge } from "@/components/hero/HeroBadge";
 import SocialProof from "./SocialProof";
-import { BorderBeam } from "@/components/magicui/border-beam";
+//import { BorderBeam } from "@/components/magicui/border-beam";
 import WordPullUp from "@/components/magicui/word-pull-up";
 import PulsatingButton from "@/components/magicui/pulsating-button";
 import Iphone15Pro from "@/components/magicui/iphone-15-pro";
