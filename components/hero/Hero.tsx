@@ -1,11 +1,11 @@
 //import Image from "next/image";
 import Link from "next/link";
 import { HeroBadge } from "@/components/hero/HeroBadge";
-import SocialProof from "./SocialProof";
 //import { BorderBeam } from "@/components/magicui/border-beam";
 import WordPullUp from "@/components/magicui/word-pull-up";
 import PulsatingButton from "@/components/magicui/pulsating-button";
 import Iphone15Pro from "@/components/magicui/iphone-15-pro";
+import { InfiniteScrollingCompanies } from "@/components/hero/InfiniteScrollingCompanies";
 
 
 export default function Hero() {
@@ -35,7 +35,10 @@ export default function Hero() {
             </Link>
           </div>
           <div className="py-7">
-            <SocialProof />
+            <h3 className="text-center text-lg font-bold text-foreground">
+              TRUSTED BY LEADING MARITIMES BUSINESSES
+            </h3>
+            <InfiniteScrollingCompanies />
           </div>
           <div className="relative w-full px-2">
             <div className="overflow-hidden">
@@ -50,8 +53,7 @@ export default function Hero() {
                 width={1920}
                 height={1080}
                 className="mx-auto w-full h-full absolute z-0 top-0 left-0 rounded-2xl hidden md:block"
-              /> 
-              
+              />
               <BorderBeam
                 size={250}
                 borderWidth={3}

@@ -16,7 +16,7 @@ export default function OverviewPage() {
           </h1>
 
           <p className="text-lg text-foreground">
-            The Munk Devs are proud to be a{" "}
+            The Everpine are proud to be a{" "}
             <span className="text-blue-600 font-bold">Nova Scotia</span> based
             business,
             <br /> but our ideas and impact reach far beyond. We believe in the
@@ -116,7 +116,7 @@ export default function OverviewPage() {
           <h2 className="text-2xl md:text-3xl font-bold">Why We Began</h2>
           <div className="space-y-4">
             <p className="text-foreground text-lg">
-              The Munk Devs are located in Dartmouth, Nova Scotia. We&apos;ve
+              The Everpine are located in Dartmouth, Nova Scotia. We&apos;ve
               seen firsthand the challenges businesses face with complex digital
               needs. Additionally, we noticed a gap in modern tech solutions
               available in Atlantic Canada. Our company is designed to help

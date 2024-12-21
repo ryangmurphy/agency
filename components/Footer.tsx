@@ -5,6 +5,7 @@ import {
   IconBrandMeta,
   IconBrandX,
 } from "@tabler/icons-react";
+import { Trees } from "lucide-react";
 
 const sections = [
   {
@@ -28,7 +29,7 @@ const sections = [
   {
     title: "Resources",
     links: [
-      { name: "Help", href: "#" },
+      { name: "Help", href: "/" },
     ],
   },
 ];
@@ -43,17 +44,13 @@ const Footer = () => {
             <div className="flex w-full max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center justify-center gap-4 lg:justify-start">
-                  <Image
-                    src="/theodorehead.png"
-                    alt="MunkDevs logo"
-                    width={44}
-                    height={44}
-                    className="h-11 w-auto"
-                  />
-                  <p className="text-3xl font-semibold">MunkDevs</p>
+                  <Trees className="size-11" />
+                  <p className="text-3xl font-semibold">Everpine</p>
                 </span>
-                <p className="mt-6 text-sm text-muted-foreground">
-                  we are goated
+                <p className="mt-4 text-sm text-muted-foreground">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Quisquam, quos.
                 </p>
               </div>
               <ul className="flex items-center space-x-6 text-muted-foreground">
@@ -98,7 +95,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-8 flex flex-col justify-between gap-4 border-t pt-8 text-center text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
-            <p>© 2024 MunkDevs. All rights reserved.</p>
+            <p>© 2024 Everpine. All rights reserved.</p>
             <ul className="flex justify-center gap-4 lg:justify-start">
               <li className="md:text-sm text-xs hover:text-primary">
                 <a href="/terms-of-service"> Terms and Conditions</a>

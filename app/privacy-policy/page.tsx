@@ -8,11 +8,11 @@ export default function PrivacyPolicy() {
         <p className="text-text mb-8"> Last Updated December 12th, 2024</p>
 
         <p className="text-text mb-8">
-          At Monday Morning, we prioritize the privacy and security of our
+          At Everpine, we prioritize the privacy and security of our
           clients and their customers. This Privacy Policy outlines how Monday
           Morning (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
           collects, utilizes, shares, and safeguards your personal information
-          when you visit or interact with our website, www.monday-morning.ca
+          when you visit or interact with our website, www.Everpine.ca
           (&ldquo;Website&rdquo;). By accessing or using our Website, you
           consent to the practices and terms detailed in this Privacy Policy.
         </p>
@@ -126,10 +126,10 @@ export default function PrivacyPolicy() {
             If you have any questions, concerns, or requests related to this
             Privacy Policy or our privacy practices, please reach out to us at{" "}
             <a
-              href="mailto:hello@monday-morning.ca"
+              href="mailto:hello@Everpine.ca"
               className="underline underline-offset-1 hover:underline-offset-2 cursor-pointer text-primary font-medium"
             >
-              hello@monday-morning.ca
+              hello@Everpine.ca
             </a>
             .
             <br />

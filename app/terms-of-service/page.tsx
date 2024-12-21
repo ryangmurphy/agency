@@ -8,7 +8,7 @@ export default function TOS() {
 
         <p className="text-text mb-8">
           These Terms and Conditions (&#34;Agreement&#34;) govern your use of
-          the monday-morning.ca website (&#34;Website&#34;) operated by Monday
+          the Everpine.ca website (&#34;Website&#34;) operated by Monday
           Morning (&#34;Company&#34;). Please read this Agreement carefully
           before accessing or using the Website. By accessing or using the
           Website, you agree to be bound by these terms. If you do not agree to
@@ -159,10 +159,10 @@ export default function TOS() {
             If you have any questions about these Terms and Conditions, please
             contact us at <br />
             <a
-              href="mailto:hello@monday-morning.ca"
+              href="mailto:hello@Everpine.ca"
               className="underline underline-offset-1 hover:underline-offset-2 cursor-pointer text-primary font-medium"
             >
-              hello@monday-morning.ca
+              hello@Everpine.ca
             </a>
             .
           </p>

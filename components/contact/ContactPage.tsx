@@ -47,10 +47,10 @@ export default function ContactPage() {
                 </span>
               </div>
               <div className="space-y-4">
-                <Link href="mailto:contact@munkdevs.com">
+                <Link href="mailto:contact@everpine.com">
                   <Button variant="outline" className="w-full justify-start">
                     <Mail className="mr-2 h-5 w-5" />
-                    contact@munkdevs.com
+                    contact@everpine.com
                   </Button>
                 </Link>
                 <Button variant="outline" className="w-full justify-start">

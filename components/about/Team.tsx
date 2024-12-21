@@ -19,43 +19,44 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
+  /*
   {
     name: "Ryan Murphy",
-    role: "Motivational Speaker",
-    image: "/alvin.webp",
+    role: "Software Developer",
+    image: "/about/developer.png",
     hoverImage: "/ryan.jpg",
     bio: "Ryan has a dynamic entrepreneurial spirit and a passion for creating meaningful value for customers. With a solid foundation in commerce and software development, Ryan earned a Bachelor of Commerce from Saint Mary’s University before completing a Full Stack Development graduate certificate from Nova Scotia Community College. \n \nRyan seamlessly wears many “hats” leveraging expertise in business operations, marketing, social media, web development, ai, and more. His creativity and diverse skill set make him a driving force behind innovative solutions and exceptional customer experiences. \n \n Some of Ryan’s interests outside of the corporate world include fitness, video editing, photography,, and he is a huge anime fan. He also recently took up golf in 2024 and discovered a new passion for bouldering. Ryan’s fascination with technology started early—he built his first PC and created his first website as a teenager, setting the foundation for his lifelong interest in all things tech.",
     buttonText: "Behind the Scenes",
     linkedin: "https://www.linkedin.com/in/ryangmurphy",
     badges: [],
-  },
+  }, */
   {
     name: "Thackery Wallis",
     role: "Business Director",
-    image: "/dave.webp",
+    image: "/about/thack-headshot.png",
     hoverImage: "/thack.webp",
     bio: "Thackery is an entrepreneur",
-    buttonText: "ALVINNNNNNN",
+    buttonText: "Behind the Scenes",
     linkedin: "https://www.linkedin.com/in/thackwallis/",
     badges: [],
   },
   {
     name: "Jonson Allen",
     role: "Software Developer",
-    image: "/theo.jpg",
+    image: "/about/thack-ai.png",
     hoverImage: "/jonson.jpg",
     bio: "Jonson is a tech enthusiast and coding wizard. With a background in computer science and machine learning, he leads our development team in creating cutting-edge web applications.",
-    buttonText: "Don't Click Me",
+    buttonText: "Behind the Scenes",
     linkedin: "https://www.linkedin.com/in/jonson-allen-56a29227a/",
     badges: [],
   },
   {
-    name: "Mathew Combdon",
+    name: "Mathew Combden",
     role: "Software Developer",
-    image: "/simon.webp",
+    image: "/about/murph-ai.png",
     hoverImage: "/matt.jpg",
-    bio: "Wouldn't you like to know weather boy",
-    buttonText: "No",
+    bio: "Behind the Scenes",
+    buttonText: "Behind the Scenes",
     linkedin: "https://www.linkedin.com/in/mathewcombdon",
     badges: [],
   },
@@ -77,7 +78,7 @@ export default function Team() {
             things
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 max-w-8xl mx-auto pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-5xl mx-auto pb-16">
           {teamMembers.map((member) => (
             <Card key={member.name} className="border-none rounded-t-full">
               <CardContent className="p-4">
@@ -115,8 +116,7 @@ export default function Team() {
                   <Button
                     onClick={() => setSelectedMember(member)}
                     variant="outline"
-
-                    className="w-full px-4 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400"
+                    className="w-full px-4 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 hover:bg-green-700 hover:text-white"
                   >
                     {member.buttonText}
                   </Button>
