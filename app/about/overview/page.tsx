@@ -56,7 +56,9 @@ export default function OverviewPage() {
           </h2>
           <p className="text-lg text-foreground">
             We provide{" "}
-            <span className="text-green-500 font-bold">intuitive solutions</span>{" "}
+            <span className="text-green-500 font-bold">
+              intuitive solutions
+            </span>{" "}
             for managing and scaling web development. We offer{" "}
             <span className="text-green-500 font-bold">
               seamless integrations
@@ -133,8 +135,8 @@ export default function OverviewPage() {
         </div>
         <div className="relative aspect-video max-w-2xl mx-auto">
           <Image
-            src="/group.webp"
-            alt=""
+            src="/dartmouth.jpg"
+            alt="Dartmouth"
             width={600}
             height={400}
             className="w-full h-full"
@@ -153,8 +155,8 @@ export default function OverviewPage() {
           <div className="text-sm text-foreground">Proudly Local</div>
         </div>
         <div className="p-6 bg-muted rounded-lg">
-          <div className="text-3xl font-bold">3 Munks</div>
-          <div className="text-sm text-foreground">1 Human</div>
+          <div className="text-3xl font-bold">Canadian</div>
+          <div className="text-sm text-foreground">Engineered</div>
         </div>
       </div>
     </section>
