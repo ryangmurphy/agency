@@ -34,6 +34,7 @@ const FlickeringGrid: React.FC<FlickeringGridProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
+  const lastTimeRef = useRef(0);
 
   const memoizedColor = useMemo(() => {
     const toRGBA = (color: string) => {
@@ -133,12 +134,11 @@ const FlickeringGrid: React.FC<FlickeringGridProps> = ({
 
     updateCanvasSize();
 
-    let lastTime = 0;
     const animate = (time: number) => {
       if (!isInView) return;
 
-      const deltaTime = (time - lastTime) / 1000;
-      lastTime = time;
+      const deltaTime = (time - lastTimeRef.current) / 1000;
+      lastTimeRef.current = time;
 
       updateSquares(gridParams.squares, deltaTime);
       drawGrid(

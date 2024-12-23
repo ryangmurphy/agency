@@ -6,6 +6,8 @@ import WordPullUp from "@/components/magicui/word-pull-up";
 import PulsatingButton from "@/components/magicui/pulsating-button";
 import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 import { InfiniteScrollingCompanies } from "@/components/hero/InfiniteScrollingCompanies";
+import { Button } from "../ui/button";
+import { DotPattern } from "@/components/magicui/dot-pattern";
 
 
 export default function Hero() {
@@ -13,6 +15,12 @@ export default function Hero() {
     <section className="relative min-h-screen bg-background py-8 md:py-16 overflow-hidden">
       <div className="absolute inset-0 max-w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
+        <div className="absolute inset-0" style={{
+          maskImage: 'radial-gradient(circle at 50% 39%, black, transparent 55%)',
+          WebkitMaskImage: 'radial-gradient(circle at 50% 39%, black, transparent 55%)'
+        }}>
+         <DotPattern />
+        </div>
       </div>
       <div className="relative container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8 text-center">
@@ -29,11 +37,15 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-row gap-4">
             <Link href="/contact">
-              <PulsatingButton>Get Started Today</PulsatingButton>
+              <PulsatingButton>Schedule a Call</PulsatingButton>
+            </Link>
+            <Link href="/work">
+              <Button>View Our Work</Button>
             </Link>
           </div>
+
           <div className="py-7">
             <h3 className="text-center text-lg font-bold text-foreground">
               TRUSTED BY LEADING MARITIMES BUSINESSES

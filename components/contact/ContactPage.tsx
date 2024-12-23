@@ -55,7 +55,7 @@ export default function ContactPage() {
                 </Link>
                 <Button variant="outline" className="w-full justify-start">
                   <PhoneCallIcon className="mr-2 h-5 w-5" />
-                  9026996969
+                  9022222222
                 </Button>
               </div>
               <div className="space-y-4 pb-24">
